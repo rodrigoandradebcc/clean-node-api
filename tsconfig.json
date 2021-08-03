@@ -1,9 +1,17 @@
 {
     "compileOptions": {
         "outDir": "./dist",
+        "rootDir": "./src", 
         "module": "commonjs",
-        "target": "es2019",
+        "target": "es2017",
         "esModuleInterop": true,
-        "allowJs": true
-    }
+        "allowJs": true,
+        "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,                     /* Skip type checking of declaration files. */
+        "forceConsistentCasingInFileNames": true   
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
 }
