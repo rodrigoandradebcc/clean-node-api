@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "sucrase-node src/main/server.ts",
+    "start": "sucrase-node src/main/server.ts",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
-    "test:integration": "nom test -- --watch -c jest-integration-config.js",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
@@ -45,8 +45,10 @@
     }
   },
   "dependencies": {
+    "@types/supertest": "^2.0.11",
     "bcrypt": "^5.0.1",
     "express": "^4.17.1",
-    "mongodb": "^4.1.0"
+    "mongodb": "^4.1.0",
+    "supertest": "^6.1.6"
   }
 }
