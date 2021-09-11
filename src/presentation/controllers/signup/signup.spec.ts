@@ -135,7 +135,6 @@ describe('SignUpController', () => {
 
     jest.spyOn(emailValidatorStub, 'isValid').mockReturnValueOnce(false); //mocka para fazer falhar
 
-
     const httpRequest = {
       body: {
         name: 'any_name',
